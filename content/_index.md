@@ -20,13 +20,13 @@ services:
 gallery:
   title: "Galerie"
   images:
-    - url: "/images/gallery/1.jpg"
+    - url: "images/gallery/1.jpg"
       alt: "Arbeitsbeispiel 1"
-    - url: "/images/gallery/2.jpg"
+    - url: "images/gallery/2.jpg"
       alt: "Arbeitsbeispiel 2"
-    - url: "/images/gallery/3.jpg"
+    - url: "images/gallery/3.jpg"
       alt: "Arbeitsbeispiel 3"
-    - url: "/images/gallery/4.jpg"
+    - url: "images/gallery/4.jpg"
       alt: "Arbeitsbeispiel 4"
 
 contact:
