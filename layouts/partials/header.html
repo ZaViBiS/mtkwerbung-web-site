@@ -1,8 +1,8 @@
 <header>
     <div class="container">
-        <a href="/" class="logo">
+        <a href="{{ "" | relURL }}" class="logo">
             {{ if .Site.Params.logo }}
-                <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+                <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }}">
             {{ else }}
                 {{ .Site.Title }}
             {{ end }}
