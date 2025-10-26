@@ -3,7 +3,7 @@
         <h2>{{ .Params.gallery.title }}</h2>
         <div class="gallery-grid">
             {{ range .Params.gallery.images }}
-                <img src="{{ .url }}" alt="{{ .alt }}">
+                <img src="{{ .url | relURL }}" alt="{{ .alt }}">
             {{ end }}
         </div>
     </div>
