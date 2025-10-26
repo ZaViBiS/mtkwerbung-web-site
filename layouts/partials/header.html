@@ -1,0 +1,18 @@
+<header>
+    <div class="container">
+        <a href="/" class="logo">
+            {{ if .Site.Params.logo }}
+                <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+            {{ else }}
+                {{ .Site.Title }}
+            {{ end }}
+        </a>
+        <nav>
+            <ul>
+                {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+</header>

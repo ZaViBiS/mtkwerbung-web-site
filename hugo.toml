@@ -1,0 +1,27 @@
+baseURL = "https://example.org/"
+languageCode = "de-de"
+title = "MTK Werbung"
+
+
+[params]
+  description = "Druck und Werbung"
+  logo = "images/logo.png" # I will create a placeholder logo
+  favicon = "images/favicon.ico" # I will create a placeholder favicon
+
+[menu]
+  [[menu.main]]
+    name = "Über uns"
+    url = "#about"
+    weight = 1
+  [[menu.main]]
+    name = "Leistungen"
+    url = "#services"
+    weight = 2
+  [[menu.main]]
+    name = "Galerie"
+    url = "#gallery"
+    weight = 3
+  [[menu.main]]
+    name = "Kontakt"
+    url = "#contact"
+    weight = 4
