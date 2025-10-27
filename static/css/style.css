@@ -13,6 +13,12 @@ html {
     scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.8;
@@ -23,8 +29,8 @@ body {
 
 .container {
     width: var(--container-width);
+    max-width: 100%;
     margin: auto;
-    overflow: hidden;
     padding: 0 20px;
 }
 
@@ -160,7 +166,8 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 15px;
     border: 1px solid #ddd;
@@ -207,7 +214,7 @@ footer {
 
 @media (max-width: 768px) {
     .container {
-        width: 95%;
+        width: 100%;
     }
 
     header .container {
@@ -225,7 +232,7 @@ footer {
     }
 
     section {
-        padding: 3rem 0;
+        padding: 3rem 1rem;
     }
 
     h2 {
