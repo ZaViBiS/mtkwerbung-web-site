@@ -217,6 +217,11 @@ footer {
         width: 100%;
     }
 
+    header {
+        position: static;
+        box-shadow: none;
+    }
+
     header .container {
         flex-direction: column;
     }
